@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<!--<html lang="ru">-->
+<head>
+    <meta charset="utf-8">
+    <title>Завдання_1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<script src="script.js"></script>
+<form action="#">
+    <p><i>Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+    <fieldset>
+        <legend>Контактная информация</legend>
+        <label for="name">Имя <em>*</em></label>
+        <input id="name" lang="uk" placeholder="Петро Петрович" autofocus required><br>
+        <label for="telephone">Телефон</label>
+        <input id="telephone" placeholder="+38 (xxx) xxx-xxxx" required><br>
+        <label for="email">Email <em>*</em></label>
+        <input id="email" lang="en" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <label for="age">Возраст<em>*</em></label>
+<!--        <input id="age" required><br>-->
+<!--        <input id="age" type="range" min="0" max="120" value="0" required><br>-->
+        <input type=range id="age" min=0 value=18 max=120 step=1 onchange="outputUpdate(value)">
+        <output for=age id=Возраст>18</output><br>
+        <label for="gender">Пол</label>
+        <select id="gender">
+            <option value="female">Женщина</option>
+            <option value="male">Мужчина</option>
+        </select><br>
+        <label for="comments">Перечислите личные качества</label>
+<!--        <textarea id="comments"></textarea>-->
+        <textarea id="comments" oninput="validateComments(this)"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Выберите ваших любимых животных</legend>
+        <label for="zebra"><input id="zebra" type="checkbox"> Зебра</label>
+        <label for="cat"><input id="cat" type="checkbox"> Кошак</label>
+        <label for="anaconda"><input id="anaconda" type="checkbox"> Анаконда</label>
+        <label for="human"><input id="human" type="checkbox"> Человек</label>
+        <label for="elephant"><input id="elephant" type="checkbox"> Слон</label>
+        <label for="wildebeest"><input id="wildebeest" type="checkbox"> Антилопа</label>
+        <label for="pigeon"><input id="pigeon" type="checkbox"> Голубь</label>
+        <label for="crab"><input id="crab" type="checkbox"> Краб</label>
+    </fieldset>
+    <p><input type="submit" value="Отправить информацию"></p>
+<!--    Відключити перевірку форми    -->
+<!--    <p><input type="submit" value="Отправить информацию" formnovalidate></p>-->
+</form>
+</body>
+</html>
