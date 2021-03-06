@@ -60,3 +60,6 @@ input[type=submit] {
     width: 170px;
     padding: 10px;
 }
+/*вертикальний повзунок*/
+/*input.vertical { -webkit-appearance: slider-vertical;  writing-mode: bt-lr; }*/
+/*<input type=range min=0 max=100 value=50 class=vertical orient=vertical>*/
