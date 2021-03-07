@@ -10,6 +10,6 @@ function validateComments(input) {
 }
 function outputUpdate(vol) {
 
-    document.querySelector('#Возраст    ').value = vol;
+    document.querySelector('#Возраст').value = vol;
 
 }
